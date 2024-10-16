@@ -1,0 +1,370 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+}
+
+p{
+    font-size: 1rem; /* 16px */
+    line-height: 1.9rem;
+    text-align: justify;
+}
+
+a{
+    text-decoration: none;
+}
+
+.main-container{
+    width: 1100px;
+    margin: 0 auto;
+}
+
+/* button */
+.btn{
+    padding: 1rem 1.5rem;
+    background: rgb(16, 77, 1);
+    color: white;
+    border: 1.5px solid rgb(14, 59, 2);
+    cursor: pointer;
+}
+
+/* title */
+.pre-title{
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    color: rgb(14, 59, 2);
+    position: relative;
+    padding-left: 40px;
+    width: fit-content;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.pre-title::before{
+    content: "";
+    width: 20px;
+    height: 1px;
+    background: rgb(16, 77, 1);
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
+
+/* logo dan navbar menu */
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    transition: 0.2s ease-in-out;
+    background-color: rgb(16, 77, 1);
+}
+
+.nav ul{
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 1rem;
+    margin-left: 2rem;
+}
+
+.logo a{
+    color: white;
+}
+
+.nav ul li a{
+    color: white;
+}
+
+/* Home Section */
+#home{
+    height: 720px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.home-name{
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0.5rem 0 1rem;
+    color: black;
+}
+
+.home-right img{
+    width: 400px;
+    border-radius: 2rem;
+}
+
+.home-right{
+    display: flex;
+    justify-content: right;
+}
+
+section{
+    padding-left: 3rem;
+    padding-bottom: 7rem;
+}
+
+/* About Section */
+#about{
+    background-color: rgb(206, 248, 189);
+    padding: 6rem 0;
+}
+
+.section-title-about{
+    text-align: center;
+    margin: 1rem 0 4rem;
+}
+
+/* layout */
+.grid-3{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3rem;
+}
+
+.about{
+    padding: 3rem 2rem;
+    text-align: center;
+    background: rgb(16, 77, 1);
+    border-radius: 0.7rem;
+}
+
+.about h4{
+    color:white;
+    margin: 0.5rem 0;
+}
+
+.about p{
+    color: white;
+}
+
+.about-icon{
+    background-color: white;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 1rem 1.3rem;
+    border-radius: 0.5rem;
+}
+
+/* Project Section */
+#project{
+    background-color: white(206, 248, 189);
+    padding: 6rem 0;
+}
+
+.section-title-project{
+    text-align: center;
+    margin: 1rem 0 4rem;
+}
+
+/* layout */
+.grid-4{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3rem;
+}
+
+.project{
+    padding: 3rem 2rem;
+    text-align: center;
+    background: rgb(16, 77, 1);
+    border-radius: 0.7rem;
+}
+
+.project h4{
+    color:white;
+    margin: 0.5rem 0;
+}
+
+.project p{
+    color: white;
+}
+
+.project-icon{
+    background-color: white;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 0.9px 0.7px;
+    border-radius: 0.5rem;
+}
+
+/*Achievement*/
+#achievement{
+    padding: 6rem 0;
+    background: rgb(206, 248, 189);
+}
+
+.section-title-achievement{
+    text-align: center;
+    margin: 1rem 0 3rem;
+}
+
+.achievement-grid{
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 3rem;
+}
+
+.achievement{
+    display: flex;
+    gap: 2rem;
+}
+
+.achievement line{
+    padding: 0 0.7rem;
+}
+
+.achievement .line div{
+    width: 2px;
+    height: 100%;
+    background: rgb(16, 77, 1);
+    position: relative;
+}
+
+.achievement-info{
+    margin:0.3rem 0;
+}
+
+.achievement-date{
+    margin-bottom: 3rem;
+}
+
+.achievement .line div::before{
+    content: "";
+    width: 15px;
+    height: 15px;
+    background: rgb(16, 77, 1);
+    border-radius: 50%;
+    position: absolute;
+    left: -6px;
+}
+
+.achievement-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 1.5rem;
+}
+
+.achievement-right{
+    line-height: 2rem;
+    padding: 0 1rem;
+}
+/*End of Achievement*/
+
+/* Gallery Section */
+#gallery{
+    background-color: white(206, 248, 189);
+    padding: 6rem 0;
+}
+
+.section-title-gallery{
+    text-align: center;
+    margin: 1rem 0 4rem;
+}
+
+/* layout */
+.grid-4{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3rem;
+}
+
+.gallery{
+    padding: 3rem 2rem;
+    text-align: center;
+    background: rgb(16, 77, 1);
+    border-radius: 0.7rem;
+}
+
+.gallery h4{
+    color:white;
+    margin: 0.5rem 0;
+}
+
+.gallery p{
+    color: white;
+}
+
+.gallery-icon{
+    background-color: white;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 0.9px 0.7px;
+    border-radius: 0.5rem;
+}
+/* End of Gallery Section */
+
+/* Contact Section */
+#contact{
+    background-color: rgb(206, 248, 189);
+    padding: 6rem;
+    text-align: center;
+}
+
+.contact-form input,
+.contact-form textarea{
+    width: 100%;
+    padding: 0.75rem 1.3rem;
+    font-family: "Roboto", sans-serif;
+    background: white;
+    border: 1px solid rgb(16, 77, 1);
+    border-radius: 3px;
+    resize: none;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder{
+    color: black;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+    outline: none;
+    border: 1px solid rgb(16, 77, 1);
+}
+
+.btn-submit{
+    width: 100%;
+    padding: 0.75rem 1.3rem;
+    background-color: rgb(16, 77, 1);
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/*Footer*/
+footer{
+    margin-bottom: 0;
+    padding: 4 rem 0;
+    background:rgb(16, 77, 1) ;
+    text-align:center;
+    color: white;
+}
+
+.footer-icons{
+    margin-bottom: 1rem;
+}
+
+.footer-icons a{
+    margin:0 0.5rem;
+}
+
+.footer-icons a:hover{
+    fill: black(24, 22, 22);
+}
+
+.footer-icons{
+    fill: white;
+}
